@@ -8,6 +8,10 @@ html {
     font-size: 18px;
 }
 
+fieldset {
+    border: none;
+}
+
 #title {
     text-transform: uppercase;
     color: white;
@@ -16,8 +20,39 @@ html {
     font-size: .8em;
 }
 
-.notice {
-    hyphens: auto;
+form,
+.newsletter {
+    padding: 35px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    height: 50px;
+    border: none;
+    background: #e8eeef;
+    border-radius: 5px;;
+}
+
+#zipcode {
+    width: 50%;
+}
+
+textarea {
+    height: 100px;
+    overflow: auto;
+}
+
+.notice,
+.contactinfo {
+    padding: 30px 0;
+    border-bottom: 3px solid dodgerblue;
+}
+
+.contactinfo {
+    padding: 30px 0;
 }
 
 #title,
@@ -39,6 +74,11 @@ input {
     display: block;
 }
 
+#topics,
+select {
+    width: 100%;
+}
+
 label .choice {
     display: inline;
 }
@@ -46,4 +86,36 @@ label .choice {
 input[type="checkbox"],
 input[type="radio"] {
     display: inline;
+}
+
+input[placeholder="Required"] {
+    text-align: right;
+    padding-right: 25px;
+}
+
+option[value=""] {
+    padding-left: 25px;
+}
+
+.flexselections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+button {
+    cursor: pointer;
+    padding: 18px 40px;
+    width: 100%;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color:lightseagreen;
+    color:white;
+}
+
+footer {
+    padding: 50px 0;
+    text-align: center;
+    color: #9a9a9a;
 }
