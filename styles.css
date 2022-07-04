@@ -106,12 +106,15 @@ option[value=""] {
 
 .flexitem,
 .choice {
-    width: auto;
-    align-items: center;
+    
 }
 
 .flexitem {
     height: 15px;
+    width: 15px;
+}
+
+.choice {
     width: auto;
 }
 
