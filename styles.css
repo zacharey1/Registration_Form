@@ -101,6 +101,7 @@ option[value=""] {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
 }
 
 button {
@@ -112,10 +113,26 @@ button {
     border-radius: 5px;
     background-color:lightseagreen;
     color:white;
+    font-size: 20px;
 }
 
 footer {
     padding: 50px 0;
     text-align: center;
     color: #9a9a9a;
+}
+
+h2,
+legend {
+    font-family: 'Mukta', sans-serif;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+p,
+label {
+    font: 350 18px 'Mukta', sans-serif;
 }
