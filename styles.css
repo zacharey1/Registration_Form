@@ -104,6 +104,16 @@ option[value=""] {
 
 }
 
+.flexitem,
+.choice {
+    width: 50%;
+}
+
+.flexitem {
+    height: 15px;
+    align-items: flex-start;
+}
+
 button {
     cursor: pointer;
     padding: 18px 40px;
