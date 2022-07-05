@@ -156,3 +156,10 @@ p,
 label {
     font: 350 18px 'Mukta', sans-serif;
 }
+
+@media screen and (min-width: 768px) {
+    main {
+    
+    
+    }
+}
