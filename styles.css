@@ -99,29 +99,31 @@ option[value=""] {
 
 .flexselections {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
+}
+
+.htmlcheck {
+    display: inline-block;
+    
 }
 
 .flexitem,
 .choice {
     align-items: center;
+    display: inline;
 }
 
 .flexitem {
     height: 15px;
     width: 15px;
-    margin: 0;
-    flex-grow: 1;
-    flex-basis: 15%;
+    margin: 0 10px 0 0;
+    
 }
 
 .choice {
-    width: auto;
-    margin-right: auto;
-    flex-grow: 2;
-    flex-basis: 85%;
+    
 }
 
 button {
