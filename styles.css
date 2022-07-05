@@ -112,6 +112,7 @@ option[value=""] {
 .flexitem {
     height: 15px;
     width: 15px;
+    align-items: center;
 }
 
 .choice {
