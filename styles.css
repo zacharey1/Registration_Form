@@ -33,7 +33,23 @@ textarea {
     height: 50px;
     border: none;
     background: #e8eeef;
-    border-radius: 5px;;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+::placeholder {
+    text-align: right;
+}
+
+#name,
+#email {
+    text-align: left;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    padding-left: 10px;
 }
 
 #zipcode {
@@ -122,8 +138,8 @@ option[value=""] {
     
 }
 
-.choice {
-    
+.flexitem {
+    cursor: pointer;
 }
 
 button {
@@ -160,8 +176,19 @@ label {
 }
 
 @media screen and (min-width: 768px) {
-    main {
-    
-    
+    header {
+        width: 100vw;
     }
+    
+    .notice,
+    form,
+    footer {
+        max-width: 790px;
+        margin: auto;
+    }
+
+    #zipcode {
+        max-width: 150px;
+    }
+
 }
