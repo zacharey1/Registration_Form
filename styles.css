@@ -175,6 +175,13 @@ label {
     font: 350 18px 'Mukta', sans-serif;
 }
 
+.contactinfo input:focus ~ input {
+     
+        background-color: #ff7f50;
+        opacity: .15;
+    
+}
+
 @media screen and (min-width: 768px) {
     header {
         width: 100vw;
