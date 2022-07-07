@@ -53,7 +53,7 @@ input[type="email"] {
 }
 
 #zipcode {
-    width: 50%;
+    width: 150px;
 }
 
 textarea {
@@ -82,18 +82,16 @@ textarea {
     margin: 0 auto;
 }
 
+textarea {
+    width: 100%;
+}
 
 label,
 input {
-    width: 100%;
     margin: .5em 0;
     display: block;
 }
 
-#topics,
-select {
-    width: 100%;
-}
 
 label .choice {
     display: inline;
@@ -175,11 +173,10 @@ label {
     font: 350 18px 'Mukta', sans-serif;
 }
 
-.contactinfo input:focus ~ input {
-     
-        background-color: #ff7f50;
-        opacity: .15;
-    
+.contactinfo input:focus,
+.contactinfo select:focus,
+textarea:focus {
+    background-color: floralwhite;
 }
 
 @media screen and (min-width: 768px) {
@@ -190,12 +187,41 @@ label {
     .notice,
     form,
     footer {
-        max-width: 790px;
+        max-width: 650px;
         margin: auto;
     }
 
-    #zipcode {
-        max-width: 150px;
+    .contactitem {
+        display: flex;
     }
 
+    .contactinfo input,
+    select[id="state"] {
+        flex-grow: 1;
+    }
+
+    input[id="zipcode"] {
+        flex-grow: 0;
+    }
+
+    .contactinfo label,
+    label[for="zipcode"] {
+        width: 175px;
+    }
+
+   select[id="state"] {
+        margin: .5em 0;
+   }
+
+   input[id="zipcode"] {
+
+   }
+
+}
+
+@media screen and (max-width: 768px) {
+    .contactinfo input,
+    select[id="state"] {
+        width: 100%;
+    }
 }
